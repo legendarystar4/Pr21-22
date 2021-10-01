@@ -1,0 +1,176 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace lklk
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //int x = 10;
+            //int y = 20;
+            //int z = 0;
+            //int zz = 0;
+            //// 1 pomocna promenna
+            //z = x + y;
+            //x = y;
+            //y = z;
+
+            //// 2x pomocna promenna
+            //z = x;
+            //zz = y;
+
+            //x = zz;
+            //y = z;
+            // scitani 
+            //x = x + y;
+            //y = x - y;
+            //x = x - y;
+
+            ////xor 
+            //x = x ^ y;
+            //y = x ^ y;
+            //x = x ^ y;
+
+            //Console.WriteLine("tohle je x {0} a tohle y {1}",x,y);
+
+
+            //int sum =  x + y;
+            //int diff =  x - y;
+            //int product = x * y;
+            //int quotient = x / y;
+
+            //Console.WriteLine($"soucet je {sum}, rozdil je {diff}, soucin je {product}, podil {quotient}");
+
+            //Console.WriteLine("Vypocet obvodu a obsahu obdelniku");
+            //Console.WriteLine("Zadej stranu A v m");
+            //int a = Convert.ToInt32(Console.ReadLine());
+
+            //Console.WriteLine("Zadej stranu B v m");
+            //int b = Convert.ToInt32(Console.ReadLine());
+
+            //if ( a < 0 && b < 0)
+            //{
+            //    Console.WriteLine("Zadej to znova mas malo");
+            //    Console.WriteLine("A v metrech");
+            //    a = Convert.ToInt32(Console.ReadLine());
+            //    Console.WriteLine("B v metrech");
+            //    b = Convert.ToInt32(Console.ReadLine());
+            //    int obvod = a * a + b * b;
+            //    int obsah = a * b;
+            //    Console.WriteLine($"Obvod = {obvod} Obsah = {obsah}");
+            //}
+            //else
+            //{
+            //int obvod = a * a + b * b;
+            //int obsah = a * b;
+
+            //Console.WriteLine($"Obvod = {obvod} Obsah = {obsah}");
+            //}
+
+            //Console.WriteLine("Vypocet obvodu a obsahu kruhu");
+            //Console.WriteLine("Zadej stranu průměr kruhu v m");
+            //int p = Convert.ToInt32(Console.ReadLine());
+
+
+            //if (p < 2)
+            //{
+            //    Console.WriteLine("Zadej to znova mas malo");
+            //    Console.WriteLine("prumer v metrech");
+            //    p = Convert.ToInt32(Console.ReadLine());
+            //    int r = p / 2;
+            //    int r2 = r * r;
+            //    double obsah = r2 * Math.PI;
+            //    double obvod = (Math.PI * 2) * p;
+            //    Console.WriteLine($"Obvod = {obvod} Obsah = {obsah}");
+            //}
+            //else
+            //{
+            //    int r = p / 2;
+            //    int r2 = r * r;
+            //    double obsah = r2 * Math.PI;
+            //    double obvod = (Math.PI * 2) * p;
+            //    Console.WriteLine($"Obvod = {obvod} Obsah = {obsah}");
+            //}
+
+            //Console.WriteLine("Zadej sem první číslo");
+            //int cislo1 = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("Zadej sem druhé číslo");
+            //int cislo2 = Convert.ToInt32(Console.ReadLine());
+
+            //if (cislo1 > cislo2)
+            //{
+            //    Console.WriteLine($"{cislo1} je větší");
+            //}
+            //else if (cislo1 == cislo2)
+            //{
+            //    Console.WriteLine($" čísla {cislo1} a {cislo2} jsou stejná");
+            //}
+            //else
+            //{
+            //    Console.WriteLine($" {cislo2} je větší");
+            //}
+
+            //Console.WriteLine("Zadej číslo");
+            //int cislo = Convert.ToInt32(Console.ReadLine());
+            //if(cislo > 0)
+            //{
+            //    Console.WriteLine($"Číslo {cislo} je kladné");
+            //}
+            //else if (cislo == 0)
+            //{
+            //    Console.WriteLine("Tvé číslo je nula ._.");
+            //}
+            //else
+            //{
+            //    Console.WriteLine($"Číslo {cislo} je záporné");
+            //}
+
+            //Console.WriteLine("Zadej číslo");
+            //int cislo = Convert.ToInt32(Console.ReadLine());
+
+            //if(cislo % 2 == 0)
+            //{
+            //    Console.WriteLine("Cislo je sude");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Cislo je liche");
+            //}
+
+            //Console.WriteLine("Zadej číslo");
+            //double cislo = Convert.ToDouble(Console.ReadLine());
+            //if (cislo % 2 ==0)
+            //{
+            //    Console.WriteLine($"Číslo {cislo} vyjde celé");
+            //}
+            //else
+            //{
+            //    Console.WriteLine($"Číslo {cislo} vyjde desetinně");
+            //}
+
+            Console.WriteLine("Zadej počet zadaných čísel");
+            int pocetCisel = Convert.ToInt32(Console.ReadLine());
+            double prumer = 0;
+            double cislo1 = 0;
+
+            for (int i = 0; i < pocetCisel; i++)
+            {
+                Console.WriteLine("Zadej číslo");
+                double cislo = Convert.ToDouble(Console.ReadLine());
+                prumer = cislo + prumer;
+                cislo1 = prumer / pocetCisel;
+            }
+            Console.WriteLine($"Soucet o {prumer}");
+            Console.WriteLine(cislo1);
+
+            Console.ReadLine();
+
+            
+
+        }
+    }
+}
