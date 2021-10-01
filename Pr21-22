@@ -10,6 +10,8 @@ namespace lklk
     {
         static void Main(string[] args)
         {
+            //pomoc pro pripad nouze
+
             //int x = 10;
             //int y = 20;
             //int z = 0;
@@ -45,6 +47,8 @@ namespace lklk
 
             //Console.WriteLine($"soucet je {sum}, rozdil je {diff}, soucin je {product}, podil {quotient}");
 
+            //Obvod obsah obdelniku
+
             //Console.WriteLine("Vypocet obvodu a obsahu obdelniku");
             //Console.WriteLine("Zadej stranu A v m");
             //int a = Convert.ToInt32(Console.ReadLine());
@@ -71,6 +75,8 @@ namespace lklk
             //Console.WriteLine($"Obvod = {obvod} Obsah = {obsah}");
             //}
 
+            //Obvod a obsah kruhu
+
             //Console.WriteLine("Vypocet obvodu a obsahu kruhu");
             //Console.WriteLine("Zadej stranu průměr kruhu v m");
             //int p = Convert.ToInt32(Console.ReadLine());
@@ -96,6 +102,8 @@ namespace lklk
             //    Console.WriteLine($"Obvod = {obvod} Obsah = {obsah}");
             //}
 
+            //ktere cislo je vetsi
+
             //Console.WriteLine("Zadej sem první číslo");
             //int cislo1 = Convert.ToInt32(Console.ReadLine());
             //Console.WriteLine("Zadej sem druhé číslo");
@@ -113,6 +121,8 @@ namespace lklk
             //{
             //    Console.WriteLine($" {cislo2} je větší");
             //}
+            
+            // kladne / 0 / zaporne
 
             //Console.WriteLine("Zadej číslo");
             //int cislo = Convert.ToInt32(Console.ReadLine());
@@ -129,6 +139,8 @@ namespace lklk
             //    Console.WriteLine($"Číslo {cislo} je záporné");
             //}
 
+            //sude / liche
+            
             //Console.WriteLine("Zadej číslo");
             //int cislo = Convert.ToInt32(Console.ReadLine());
 
@@ -141,6 +153,8 @@ namespace lklk
             //    Console.WriteLine("Cislo je liche");
             //}
 
+            // cele / desetinne
+
             //Console.WriteLine("Zadej číslo");
             //double cislo = Convert.ToDouble(Console.ReadLine());
             //if (cislo % 2 ==0)
@@ -152,20 +166,23 @@ namespace lklk
             //    Console.WriteLine($"Číslo {cislo} vyjde desetinně");
             //}
 
-            Console.WriteLine("Zadej počet zadaných čísel");
-            int pocetCisel = Convert.ToInt32(Console.ReadLine());
-            double prumer = 0;
-            double cislo1 = 0;
+            //prumer
 
-            for (int i = 0; i < pocetCisel; i++)
-            {
-                Console.WriteLine("Zadej číslo");
-                double cislo = Convert.ToDouble(Console.ReadLine());
-                prumer = cislo + prumer;
-                cislo1 = prumer / pocetCisel;
-            }
-            Console.WriteLine($"Soucet o {prumer}");
-            Console.WriteLine(cislo1);
+            //Console.WriteLine("Zadej počet zadaných čísel");
+            //int pocetCisel = Convert.ToInt32(Console.ReadLine());
+            //double prumer = 0;
+            //double cislo1 = 0;
+
+            //for (int i = 0; i < pocetCisel; i++)
+            //{
+            //    Console.WriteLine("Zadej číslo");
+            //    double cislo = Convert.ToDouble(Console.ReadLine());
+            //    prumer = cislo + prumer;
+            //    cislo1 = prumer / pocetCisel;
+            //}
+            //Console.WriteLine($"Soucet {prumer} vyjde {cislo1}");
+
+
 
             Console.ReadLine();
 
