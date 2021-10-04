@@ -182,7 +182,18 @@ namespace lklk
             //}
             //Console.WriteLine($"Soucet {prumer} vyjde {cislo1}");
 
+            Console.WriteLine("Zadej počet čísel, která budeš zadávat");
+            int pocetCisel = Convert.ToInt32(Console.ReadLine());
+            int cislo = 0;
+            int pomocneCislo = 0;
 
+            for (int i = 0; i < pocetCisel; i++)
+            {
+                Console.WriteLine("Zadej číslo");
+                cislo = Convert.ToInt32(Console.ReadLine());
+                pomocneCislo = cislo + pomocneCislo;
+            }
+            Console.WriteLine($"Vysledny soucet je {pomocneCislo}" );
 
             Console.ReadLine();
 
